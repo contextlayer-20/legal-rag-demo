@@ -95,22 +95,22 @@
 - [x] Initialise all session state keys
 
 ## Step 11 — Docker Compose Full Stack
-- [ ] Run `docker-compose up`
-- [ ] Verify ollama container starts and is healthy
-- [ ] Verify qdrant container starts and is healthy
-- [ ] Verify app container builds and starts
-- [ ] Verify ingestion runs on first startup
-- [ ] Test 3+ questions end-to-end with citations
-- [ ] Verify download buttons work
+- [x] Run `docker-compose up`
+- [x] Verify ollama container starts and is healthy
+- [x] Verify qdrant container starts and is healthy
+- [x] Verify app container builds and starts
+- [x] Verify ingestion runs on first startup
+- [x] Test 3+ questions end-to-end with citations
+- [x] Verify download buttons work
 
 ## Step 12 — README.md
-- [ ] Project title and one-line description
-- [ ] Demo GIF placeholder
-- [ ] One-command setup block (exact format per spec)
-- [ ] "What this does" — 3 bullet points
-- [ ] Architecture ASCII diagram
-- [ ] Stack table
-- [ ] Full setup instructions
-- [ ] How to add your own documents
-- [ ] Deployment/privacy note
-- [ ] ContextLayer footer
+- [x] Project title and one-line description
+- [x] Demo GIF placeholder
+- [x] One-command setup block (exact format per spec)
+- [x] "What this does" — 3 bullet points
+- [x] Architecture ASCII diagram
+- [x] Stack table
+- [x] Full setup instructions
+- [x] How to add your own documents
+- [x] Deployment/privacy note
+- [x] ContextLayer footer
