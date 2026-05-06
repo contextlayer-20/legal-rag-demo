@@ -73,12 +73,12 @@
 - [x] Test with 5 sample questions
 
 ## Step 9 — rag/generator.py
-- [ ] Implement `generate(query, chunks)` function signature
-- [ ] Build prompt using prompts.py templates
-- [ ] Call Ollama via LlamaIndex `Ollama` class
-- [ ] Implement streaming (yield tokens)
-- [ ] Handle Ollama connection errors
-- [ ] Test end-to-end pipeline from command line
+- [x] Implement `generate(query, chunks)` function signature
+- [x] Build prompt using prompts.py templates
+- [x] Call Ollama via LlamaIndex `Ollama` class
+- [x] Implement streaming (yield tokens)
+- [x] Handle Ollama connection errors
+- [x] Test end-to-end pipeline from command line
 
 ## Step 10 — app.py
 - [ ] Two-column layout (ratio 2:1)
