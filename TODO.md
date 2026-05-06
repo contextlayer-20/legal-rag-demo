@@ -24,10 +24,10 @@
 - [x] Verify no magic numbers exist anywhere else
 
 ## Step 3 — docker-compose.yml and Dockerfile
-- [ ] Write `docker-compose.yml` with three services (ollama, qdrant, app)
-- [ ] Add healthchecks for ollama and qdrant
-- [ ] Add `depends_on` with health conditions for app
-- [ ] Write `Dockerfile` (python:3.11-slim, pre-cache embedding model)
+- [x] Write `docker-compose.yml` with three services (ollama, qdrant, app)
+- [x] Add healthchecks for ollama and qdrant
+- [x] Add `depends_on` with health conditions for app
+- [x] Write `Dockerfile` (python:3.11-slim, pre-cache embedding model)
 
 ## Step 4 — requirements.txt
 - [ ] Pin all packages per spec
