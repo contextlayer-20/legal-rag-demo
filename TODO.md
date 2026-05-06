@@ -50,9 +50,9 @@
 - [x] Verify specific clause numbers and defined terms in each doc
 
 ## Step 6 — rag/prompts.py
-- [ ] Write system prompt (answer only from context, cite sources, fallback phrase)
-- [ ] Write user prompt template (context_chunks + question)
-- [ ] Verify system prompt is under 150 words
+- [x] Write system prompt (answer only from context, cite sources, fallback phrase)
+- [x] Write user prompt template (context_chunks + question)
+- [x] Verify system prompt is under 150 words
 
 ## Step 7 — scripts/ingest.py
 - [ ] Load PDFs with `SimpleDirectoryReader`
