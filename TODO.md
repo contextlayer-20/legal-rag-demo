@@ -81,18 +81,18 @@
 - [x] Test end-to-end pipeline from command line
 
 ## Step 10 — app.py
-- [ ] Two-column layout (ratio 2:1)
-- [ ] Header: "ContextLayer / Legal Document Q&A" + tagline
-- [ ] Left column: chat interface with `st.chat_input`
-- [ ] Display full conversation history from session state
-- [ ] On query: retrieve → generate (streaming) → display citations
-- [ ] Citations panel in `st.expander` with download buttons
-- [ ] Query limit enforcement (disable input at 0)
-- [ ] Right column: document library with download buttons
-- [ ] Right column: session counter + progress bar
-- [ ] Ingestion on startup with spinner
-- [ ] Apply custom CSS (dark theme, DM Mono font)
-- [ ] Initialise all session state keys
+- [x] Two-column layout (ratio 2:1)
+- [x] Header: "ContextLayer / Legal Document Q&A" + tagline
+- [x] Left column: chat interface with `st.chat_input`
+- [x] Display full conversation history from session state
+- [x] On query: retrieve → generate (streaming) → display citations
+- [x] Citations panel in `st.expander` with download buttons
+- [x] Query limit enforcement (disable input at 0)
+- [x] Right column: document library with download buttons
+- [x] Right column: session counter + progress bar
+- [x] Ingestion on startup with spinner
+- [x] Apply custom CSS (dark theme, DM Mono font)
+- [x] Initialise all session state keys
 
 ## Step 11 — Docker Compose Full Stack
 - [ ] Run `docker-compose up`
