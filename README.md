@@ -2,7 +2,7 @@
 
 Ask questions against a set of legal documents and get accurate, cited answers — entirely on your own infrastructure.
 
-[Demo GIF — coming soon]
+![Demo GIF](./assets/demo-testcase.gif)
 
 ## One-command setup
 
