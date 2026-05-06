@@ -65,12 +65,12 @@
 - [x] Test locally against docs folder
 
 ## Step 8 — rag/retriever.py
-- [ ] Implement `retrieve(query, top_k)` function signature
-- [ ] Embed query with same model as ingest
-- [ ] Query Qdrant for top K results
-- [ ] Return list of dicts with `text`, `source_file`, `page_number`, `score`
-- [ ] Handle Qdrant connection errors
-- [ ] Test with 5 sample questions
+- [x] Implement `retrieve(query, top_k)` function signature
+- [x] Embed query with same model as ingest
+- [x] Query Qdrant for top K results
+- [x] Return list of dicts with `text`, `source_file`, `page_number`, `score`
+- [x] Handle Qdrant connection errors
+- [x] Test with 5 sample questions
 
 ## Step 9 — rag/generator.py
 - [ ] Implement `generate(query, chunks)` function signature
