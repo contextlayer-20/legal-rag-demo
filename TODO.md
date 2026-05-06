@@ -3,21 +3,21 @@
 ## Step 1 — Repo Structure
 - [x] Create feature branch (`session-1-scaffold`)
 - [x] Create `TODO.md`
-- [ ] Create all empty files and directories per the spec
-  - [ ] `rag/__init__.py`
-  - [ ] `rag/ingest.py`
-  - [ ] `rag/retriever.py`
-  - [ ] `rag/generator.py`
-  - [ ] `rag/prompts.py`
-  - [ ] `docs/` directory
-  - [ ] `app.py`
-  - [ ] `config.py`
-  - [ ] `requirements.txt`
-  - [ ] `docker-compose.yml`
-  - [ ] `Dockerfile`
-  - [ ] `.env.example`
-  - [ ] `.gitignore`
-  - [ ] `README.md`
+- [x] Create all empty files and directories per the spec
+  - [x] `rag/__init__.py`
+  - [x] `rag/ingest.py`
+  - [x] `rag/retriever.py`
+  - [x] `rag/generator.py`
+  - [x] `rag/prompts.py`
+  - [x] `docs/` directory
+  - [x] `app.py`
+  - [x] `config.py`
+  - [x] `requirements.txt`
+  - [x] `docker-compose.yml`
+  - [x] `Dockerfile`
+  - [x] `.env.example`
+  - [x] `.gitignore`
+  - [x] `README.md`
 
 ## Step 2 — config.py
 - [ ] Write all constants (Qdrant, Ollama, Embeddings, Chunking, Retrieval, Demo limits, Branding)
