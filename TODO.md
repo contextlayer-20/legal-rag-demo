@@ -55,14 +55,14 @@
 - [x] Verify system prompt is under 150 words
 
 ## Step 7 — scripts/ingest.py
-- [ ] Load PDFs with `SimpleDirectoryReader`
-- [ ] Chunk with `SentenceSplitter` using config values
-- [ ] Embed with `HuggingFaceEmbedding`
-- [ ] Store in Qdrant with `source_file`, `page_number`, `chunk_index` metadata
-- [ ] Check for existing collection before ingesting
-- [ ] Add progress logging
-- [ ] Add connection error handling
-- [ ] Test locally against docs folder
+- [x] Load PDFs with `SimpleDirectoryReader`
+- [x] Chunk with `SentenceSplitter` using config values
+- [x] Embed with `HuggingFaceEmbedding`
+- [x] Store in Qdrant with `source_file`, `page_number`, `chunk_index` metadata
+- [x] Check for existing collection before ingesting
+- [x] Add progress logging
+- [x] Add connection error handling
+- [x] Test locally against docs folder
 
 ## Step 8 — rag/retriever.py
 - [ ] Implement `retrieve(query, top_k)` function signature
