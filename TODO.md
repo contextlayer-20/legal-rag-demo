@@ -41,20 +41,20 @@
   - [x] `python-dotenv>=1.0.0`
 
 ## Step 5 — Synthetic Legal Documents
-- [ ] Write `docs/nda-template.pdf` (2-page mutual NDA)
-- [ ] Write `docs/service-agreement.pdf` (3-page professional services agreement)
-- [ ] Write `docs/employment-contract.pdf` (3-page employment contract)
-- [ ] Write `docs/ip-assignment.pdf` (2-page IP assignment)
-- [ ] Write `docs/privacy-policy.pdf` (2-page internal privacy policy)
-- [ ] Verify all docs use Meridian Group Ltd / Vantage Legal LLP consistently
-- [ ] Verify specific clause numbers and defined terms in each doc
+- [x] Write `docs/nda-template.pdf` (2-page mutual NDA)
+- [x] Write `docs/service-agreement.pdf` (3-page professional services agreement)
+- [x] Write `docs/employment-contract.pdf` (3-page employment contract)
+- [x] Write `docs/ip-assignment.pdf` (2-page IP assignment)
+- [x] Write `docs/privacy-policy.pdf` (2-page internal privacy policy)
+- [x] Verify all docs use Meridian Group Ltd / Vantage Legal LLP consistently
+- [x] Verify specific clause numbers and defined terms in each doc
 
 ## Step 6 — rag/prompts.py
 - [ ] Write system prompt (answer only from context, cite sources, fallback phrase)
 - [ ] Write user prompt template (context_chunks + question)
 - [ ] Verify system prompt is under 150 words
 
-## Step 7 — rag/ingest.py
+## Step 7 — scripts/ingest.py
 - [ ] Load PDFs with `SimpleDirectoryReader`
 - [ ] Chunk with `SentenceSplitter` using config values
 - [ ] Embed with `HuggingFaceEmbedding`
