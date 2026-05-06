@@ -30,15 +30,15 @@
 - [x] Write `Dockerfile` (python:3.11-slim, pre-cache embedding model)
 
 ## Step 4 — requirements.txt
-- [ ] Pin all packages per spec
-  - [ ] `streamlit>=1.32.0`
-  - [ ] `llama-index>=0.10.0`
-  - [ ] `llama-index-vector-stores-qdrant>=0.2.0`
-  - [ ] `llama-index-embeddings-huggingface>=0.2.0`
-  - [ ] `llama-index-llms-ollama>=0.1.0`
-  - [ ] `qdrant-client>=1.8.0`
-  - [ ] `sentence-transformers>=2.6.0`
-  - [ ] `python-dotenv>=1.0.0`
+- [x] Pin all packages per spec
+  - [x] `streamlit>=1.32.0`
+  - [x] `llama-index>=0.10.0`
+  - [x] `llama-index-vector-stores-qdrant>=0.2.0`
+  - [x] `llama-index-embeddings-huggingface>=0.2.0`
+  - [x] `llama-index-llms-ollama>=0.1.0`
+  - [x] `qdrant-client>=1.8.0`
+  - [x] `sentence-transformers>=2.6.0`
+  - [x] `python-dotenv>=1.0.0`
 
 ## Step 5 — Synthetic Legal Documents
 - [ ] Write `docs/nda-template.pdf` (2-page mutual NDA)
