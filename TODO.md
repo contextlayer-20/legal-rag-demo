@@ -20,8 +20,8 @@
   - [x] `README.md`
 
 ## Step 2 — config.py
-- [ ] Write all constants (Qdrant, Ollama, Embeddings, Chunking, Retrieval, Demo limits, Branding)
-- [ ] Verify no magic numbers exist anywhere else
+- [x] Write all constants (Qdrant, Ollama, Embeddings, Chunking, Retrieval, Demo limits, Branding)
+- [x] Verify no magic numbers exist anywhere else
 
 ## Step 3 — docker-compose.yml and Dockerfile
 - [ ] Write `docker-compose.yml` with three services (ollama, qdrant, app)
