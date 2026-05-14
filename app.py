@@ -56,8 +56,29 @@ def _run_ingestion() -> None:
         st.stop()
 
 
-def _apply_styles() -> None:
-    """Inject custom dark-theme CSS with DM Mono font."""
+def _apply_styles(theme: str) -> None:
+    """Inject theme CSS (light or dark) with DM Mono font.
+
+    Args:
+        theme: ``"light"`` or ``"dark"``.
+    """
+    if theme == "dark":
+        bg = "#0d1117"
+        fg = "#c9d1d9"
+        surface = "#0f1923"
+        border = "#1a2535"
+        btn_bg = "#1a2535"
+        btn_hover_fg = bg
+        progress_track = "#1a2535"
+    else:
+        bg = "#fafbfc"
+        fg = "#1f2328"
+        surface = "#ffffff"
+        border = "#d0d7de"
+        btn_bg = "#f6f8fa"
+        btn_hover_fg = "#1f2328"
+        progress_track = "#d0d7de"
+
     st.markdown(
         f"""
         <style>
@@ -65,41 +86,66 @@ def _apply_styles() -> None:
 
         html, body, [class*="css"] {{
             font-family: 'DM Mono', monospace !important;
-            background-color: #0d1117;
-            color: #c9d1d9;
+            background-color: {bg};
+            color: {fg};
         }}
         .stApp {{
-            background-color: #0d1117;
+            background-color: {bg};
+            color: {fg};
+        }}
+        [data-testid="stHeader"] {{
+            background-color: {bg};
+        }}
+        [data-testid="stSidebar"] {{
+            background-color: {surface};
+            border-right: 1px solid {border};
+        }}
+        [data-testid="stMarkdownContainer"] p, [data-testid="stMarkdownContainer"] li {{
+            color: {fg};
+        }}
+        [data-testid="stCaption"] {{
+            color: {"#656d76" if theme == "light" else "#8b949e"} !important;
         }}
         [data-testid="stChatMessage"] {{
-            background-color: #0f1923;
-            border: 1px solid #1a2535;
+            background-color: {surface};
+            border: 1px solid {border};
             border-radius: 6px;
             padding: 0.75rem;
         }}
         [data-testid="stChatInputContainer"] {{
-            border-top: 1px solid #1a2535;
+            border-top: 1px solid {border};
+            background-color: {bg};
         }}
         [data-testid="stExpander"] {{
-            background-color: #0f1923;
-            border: 1px solid #1a2535 !important;
+            background-color: {surface};
+            border: 1px solid {border} !important;
         }}
         a {{
             color: {ACCENT_COLOR} !important;
         }}
         .stButton > button, .stDownloadButton > button {{
-            background-color: #1a2535;
-            color: #c9d1d9;
+            background-color: {btn_bg};
+            color: {fg};
             border: 1px solid {ACCENT_COLOR};
             font-family: 'DM Mono', monospace;
             border-radius: 4px;
         }}
         .stButton > button:hover, .stDownloadButton > button:hover {{
             background-color: {ACCENT_COLOR};
-            color: #0d1117;
+            color: {btn_hover_fg};
+            border-color: {ACCENT_COLOR};
         }}
         hr {{
-            border-color: #1a2535;
+            border-color: {border};
+        }}
+        [data-testid="stProgressBar"] > div {{
+            background-color: {progress_track};
+        }}
+        textarea[data-testid="stChatInputTextArea"],
+        textarea[aria-label*="question"] {{
+            background-color: {surface} !important;
+            color: {fg} !important;
+            border: 1px solid {border} !important;
         }}
         </style>
         """,
@@ -194,8 +240,19 @@ def main() -> None:
         page_icon="⚖️",
         layout="wide",
     )
-    _apply_styles()
     _init_session_state()
+
+    with st.sidebar:
+        st.markdown("##### Appearance")
+        appearance = st.radio(
+            "Theme",
+            ["Light", "Dark"],
+            horizontal=True,
+            label_visibility="collapsed",
+            key="appearance",
+        )
+    theme_slug = "light" if appearance == "Light" else "dark"
+    _apply_styles(theme_slug)
 
     st.markdown(f"## ContextLayer  /  {DEMO_NAME}")
     st.caption(
